@@ -1,2 +1,2 @@
 # weather-jq
-html css jq js
+https://maxyashch.github.io/weather-jq/
