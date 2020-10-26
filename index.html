@@ -6,26 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"> -->
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <title>W E A T H E R</title>
 </head>
 
 <body>
-    <div class="location">
-        <h1 class="location__timezone">Timezone</h1>
-        <p>Icon</p>
-    </div>
-    <canvas id="icon1" width="128" height="128"></canvas>
-    <div class="temperature">
-        <div class="temperature__degree--section">
-            <h2 class="temperature__degree">34</h2>
-            <span>F</span>
-            <div class="temperature__description">Freezing</div>
+
+
+    <div class="container">
+        <div class="weather">
+            <div class="weather__location">
+                <h2 class="weather__location-point"></h2>
+                <canvas class="weather__location-type" id="icon1" width="128" height="128"></canvas>
+            </div>
+            <div class="weather__temperature">
+                <h1 class="weather__temperature-point"></h1>
+                <span class="weather__temperature-type">°C</span>
+            </div>
+            <h2 class="weather__description"></h2>
         </div>
     </div>
 
-    <script src="script.js"></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="skycons.js"></script>
+    <script defer src="script.js"></script>
 </body>
 
 </html>
